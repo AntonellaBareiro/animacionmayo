@@ -1,0 +1,89 @@
+/* Animacion CSS 
+@keyframes nombreDeLaAnimacion{
+0%{}
+5.6%{}
+10%{}
+50%{}
+100%{}
+}
+*/
+
+@keyframes caminar1{
+	0%{
+		background-position: 2929px;
+	}
+	100%{
+		background-position: 180px;
+	}
+}
+@keyframes caminar2{
+	0%{
+		background-position: 1472px;
+	}
+	100%{
+		background-position: 0px;
+	}
+}
+@keyframes trasladar{
+	0%{
+		transform: translateX(0px)
+	}
+	100%{
+		transform: translateX(1500px);
+	}
+}
+@keyframes trasladar1{
+	0%{
+		transform: translateX(1500px)
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+@keyframes zombiecamina{
+	0%{
+		background-position: 2000px;
+	}
+	100%{
+		background-position: 0px;
+	}
+}
+.caballo{
+	background: url("img/Horse-frames.jpg");
+	height: 121px;
+	width: 180px;
+	animation-name: caminar1;
+	animation-duration: 0.54s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(15);
+	/*animation-direction: reverse;*/
+}
+.cartoon1{
+	background: url("img/capguy-walk.png");
+	background-position: 0px;
+	height: 325px;
+	width: 180px;
+	animation-name: caminar2, trasladar;
+	animation-duration: 0.54s, 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(8), linear;
+	/*animation-fill-mode: forwards;*/ comando para que la animicion se ejecute una vez y no se vuelva a ver en pantalla 
+
+}
+.zombie{
+	background: url("img/steps3.png");
+	background position: 0px;
+	height: 312px;
+	width: 200px;
+	animation-name: zombiecamina, trasladar1;
+	animation-duration: 0.54s, 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(10), linear;
+	
+}
+
+
+
+
+
+
